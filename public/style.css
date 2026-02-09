@@ -25,9 +25,15 @@ body {
   min-height: 100vh;
 }
 
+body::selection {
+  background: #8f7b55;
+  color: #1f1b18;
+}
+
 .bg-header, .bg-footer {
   position: absolute;
-  background-color: #4134F7;
+  background: linear-gradient(135deg, #1f1b18, #c49a5a);
+  color: #635033;
 }
 
 .bg-header {
@@ -45,7 +51,7 @@ body {
 
 article {
   position: relative;
-  border: 2px solid black;
+  border: 2px solid #b89155;
   display: grid;
   place-items: center;
   width: 23em;
@@ -90,7 +96,7 @@ section {
 
   p {
     font-family: DMSans-med;
-    color: #4134F7;
+    color: #8f7b55;
     padding: 0;
   }
 }
@@ -111,6 +117,15 @@ a {
 
   svg {
     stroke: black;
+  }
+}
+
+a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(196, 154, 90, 0.35);
+
+  svg {
+    stroke: #e0b973;
   }
 }
 
