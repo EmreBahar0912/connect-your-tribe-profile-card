@@ -3,6 +3,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: DMSans-reg;
+  src: url(/DMSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: DMSans-med;
+  src: url(/DMSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: DMSans-bold;
+  src: url(/DMSans-Bold.ttf);
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -69,19 +84,20 @@ section {
   gap: 0.2em;
 
   h1 {
+    font-family: DMSans-bold;
     font-size: 1.33em;
   }
 
   p {
+    font-family: DMSans-med;
     color: #4134F7;
-    font-weight: 550;
     padding: 0;
   }
 }
 
 span {
+  font-family: DMSans-med;
   color: #62748E;
-  font-weight: bolder;
 }
 
 a {
@@ -99,6 +115,7 @@ a {
 }
 
 p {
+  font-family: DMSans-reg;
   color: #62748E;
   text-align: left;
   padding-top: 1.5em;
